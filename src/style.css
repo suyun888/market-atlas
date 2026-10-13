@@ -11,3 +11,7 @@
 @media(max-width:380px){.side-panel{grid-template-columns:90px minmax(0,1fr)}.market-list{grid-template-columns:1fr}.brand-sub{max-width:140px;font-size:5px}.brand-name{font-size:10px}.toplinks{gap:8px}.toplinks button{font-size:9px}.hero h1{font-size:23px}}
 .stage{display:flex;flex-direction:column}.chart-area{flex:1}
 .stage.expanded{position:fixed;inset:12px;z-index:50;background:#0b0e16;box-shadow:0 0 0 30px #070a12,0 0 0 100vmax #070a12eb}.stage.expanded .chart-area{height:auto;min-height:0}.stage.expanded .chart-date{font-size:32px}.stage.expanded .chart-legend{padding:18px}
+.chart-area{flex:1 0 385px}
+@media(max-width:850px){.chart-area{flex-basis:380px}}
+@media(max-width:540px){.chart-area{flex-basis:335px}}
+.stage:fullscreen .chart-area,.stage.expanded .chart-area{flex:1 1 0;min-height:0}

@@ -36,7 +36,7 @@ GitHub Releases 提供两种 ZIP：
 
 源码包解压后，进入 `market-atlas/`，执行 `npm ci` 和 `npm run dev`。部署包无需安装 Node.js，将解压后的全部文件放到静态服务器根目录即可。
 
-默认构建面向网站根目录。若部署在 `/market-atlas/` 这样的子路径，使用 `npm run build -- --base=/market-atlas/` 重新构建，再上传新的 `dist/` 内容。
+构建资源使用相对路径，可放在网站根目录，也可放在 `/market-atlas/` 这样的普通子目录。请通过 HTTP 静态服务器访问，不要直接双击 HTML 文件。
 
 ## 页面功能
 
